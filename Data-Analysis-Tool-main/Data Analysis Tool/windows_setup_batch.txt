@@ -1,0 +1,32 @@
+@echo off
+echo 🚀 Setting up Python Data Analysis Environment...
+echo ================================================
+
+REM Check if Python is installed
+python --version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ❌ Python not found! Please install Python first.
+    echo Download from: https://python.org/downloads
+    pause
+    exit /b 1
+)
+
+echo ✅ Python found!
+echo 📦 Installing required packages...
+
+python -m pip install --upgrade pip
+python -m pip install pandas numpy scikit-learn matplotlib seaborn openpyxl xlrd xlsxwriter
+
+if %errorlevel% equ 0 (
+    echo.
+    echo ================================================
+    echo ✅ Setup complete! Your environment is ready.
+    echo 🎉 You can now run your data analysis tools!
+    echo.
+    echo To run your analyzer:
+    echo python "Data Analysis Tool/simple_gui_analyzer.py"
+) else (
+    echo ❌ Installation failed. Please check the errors above.
+)
+
+pause

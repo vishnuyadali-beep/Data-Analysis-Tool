@@ -1,0 +1,16 @@
+{
+  "column_mapping": {
+    "item_name": "Unnamed: 1"
+  },
+  "sales_trends": {
+    "error": "Missing date or price columns"
+  },
+  "menu_performance": {
+    "error": "Missing item name or price columns"
+  },
+  "ai_insights": [
+    "Dataset contains 147 transaction records",
+    "Warning: 1291 missing data points detected"
+  ],
+  "generated_at": "2025-07-14T13:44:15.115719"
+}
