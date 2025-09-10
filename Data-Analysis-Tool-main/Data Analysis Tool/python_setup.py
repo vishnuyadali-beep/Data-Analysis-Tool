@@ -31,7 +31,8 @@ def main():
         "seaborn",
         "openpyxl",
         "xlrd",
-        "xlsxwriter"
+        "xlsxwriter",
+        "customtkinter"
     ]
     
     print(f"📦 Installing {len(packages)} packages...")
